@@ -1,0 +1,60 @@
+/* General Body Styles */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    background-image: url('starry_night_background.jpg'); /* Add your starry night background image */
+    background-size: cover;
+    color: rgb(249, 250, 249);
+    padding: 40px;
+}
+
+/* Chat Container Styles */
+.chat-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Soft glow effect */
+}
+
+/* User Input Styles */
+#user-input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Send Button Styles */
+#send-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 215, 0, 0.8); /* Gold-like color */
+    color: black;
+    cursor: pointer;
+}
+
+/* Send Button Hover Effect */
+#send-button:hover {
+    background-color: rgba(255, 215, 0, 1);
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 600px) {
+    .chat-container {
+        width: 95%;
+        margin: 20px auto;
+        height: 300px; /* Adjust height for smaller screens */
+    }
+
+    #user-input {
+        width: 70%; /* Adjust width for user input */
+    }
+
+    #send-button {
+        width: 25%; /* Adjust button width */
+    }
+}
